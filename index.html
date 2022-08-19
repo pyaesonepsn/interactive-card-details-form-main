@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/scss/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
 <body>
@@ -13,8 +16,13 @@
 <!--    Left Side of Division-->
     <div class="left-div">
       <div class="card-images">
-        <img src="images/bg-card-front.png" alt="card-front" class="card-front">
-        <img src="images/bg-card-back.png" alt="card-back" class="card-back">
+        <div class="front-card-content">
+          <img src="images/bg-card-front.png" alt="card-front" class="card-front-img">
+          <img src="images/card-logo.svg" alt="card-logo" class="card-logo">
+        </div>
+        <div class="back-card-content">
+          <img src="images/bg-card-back.png" alt="card-back" class="card-back-img">
+        </div>
       </div>
       <img src="images/bg-main-desktop.png" alt="background" class="left-img">
     </div>
@@ -32,13 +40,15 @@
           <input type="number" placeholder="e.g 1234 5678 9123 0000" required>
         </div>
         <div class="date-and-cvc">
-          <p>EXP. DATE(MM/YY)</p>
-          <input type="number" placeholder="MM" required>
-          <input type="number" placeholder="YY" required>
-        </div>
-        <div class="cvc">
-          <p>CVC</p>
-          <input type="number" placeholder="e.g 123" required>
+          <div class="dates">
+            <p>EXP. DATE(MM/YY)</p>
+            <input type="number" placeholder="MM" required>
+            <input type="number" placeholder="YY" required>
+          </div>
+          <div class="cvc">
+            <p>CVC</p>
+            <input type="number" placeholder="e.g 123" required>
+          </div>
         </div>
         <button class="confirmBtn">Confirm</button>
       </form>

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  overflow: hidden;
+}
+body a {
+  color: hsl(278deg, 68%, 11%);
+  text-decoration: none;
+}
+body a:hover {
+  opacity: 50%;
+}
+body p {
+  color: hsl(278deg, 68%, 11%);
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+  font-size: 12px;
+}
+body input {
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  width: 20rem;
+  border: solid hsl(270deg, 3%, 87%);
+  margin-bottom: 1.5rem;
+}
+body input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+body .main-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+body .main-container .left-div {
+  position: relative;
+  height: 100%;
+}
+body .main-container .left-div .card-images {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body .main-container .left-div .card-images .front-card-content .card-front-img {
+  width: 25rem;
+}
+body .main-container .left-div .card-images .front-card-content .card-logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+body .main-container .left-div .card-images .back-card-content {
+  margin-left: 5rem;
+}
+body .main-container .right-div {
+  margin: auto;
+}
+body .main-container .right-div form .cardholder-name, body .main-container .right-div form .card-number {
+  margin-bottom: 10px;
+}
+body .main-container .right-div form .date-and-cvc {
+  display: flex;
+  justify-content: space-between;
+}
+body .main-container .right-div form .date-and-cvc input {
+  width: 4.5rem;
+}
+body .main-container .right-div form .date-and-cvc .cvc input {
+  width: 9rem;
+}
+body .main-container .right-div form button {
+  margin-top: 30px;
+  padding: 10px;
+  background: hsl(278deg, 68%, 11%);
+  color: white;
+  border-radius: 10px;
+  width: 20rem;
+  cursor: pointer;
+}
+body .main-container .right-div .completed-state {
+  text-align: center;
+  display: none;
+}
+body .main-container .right-div .completed-state p {
+  padding: 20px 0 10px 0;
+  color: hsl(279deg, 6%, 55%);
+}
+body .main-container .right-div .attribution {
+  position: fixed;
+  bottom: 0;
+  right: 35%;
+}
+
+/*# sourceMappingURL=style.css.map */

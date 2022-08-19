@@ -1,0 +1,136 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+}
+
+// Colors
+$primary-color: hsl(278, 68%, 11%);
+$secondary-color: hsl(270, 3%, 87%);
+$complete-state-color: hsl(279, 6%, 55%);
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+input[type=number] {
+        -moz-appearance: textfield;
+}
+
+body{
+        overflow: hidden;
+        a{
+                color: $primary-color;
+                text-decoration: none;
+                &:hover{
+                        opacity: 50%;
+                }
+        }
+
+        p{
+                color: $primary-color;
+                letter-spacing: 2px;
+                margin-bottom: .3rem;
+                font-size: 12px;
+        }
+        input{
+                border-radius: 5px;
+                outline: none;
+                padding: 5px;
+                width: 20rem;
+                border: solid $secondary-color;
+                margin-bottom: 1.5rem;
+                &::placeholder {
+                        color: $secondary-color;
+                }
+        }
+
+        .main-container{
+                display: flex;
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+
+                .left-div{
+                        position: relative;
+                        height: 100%;
+
+                        .card-images{
+                                position: absolute;
+                                left: 80%;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+
+                                .front-card-content{
+                                        .card-front-img{
+                                                width: 25rem;
+                                        }
+                                        .card-logo{
+                                                position: absolute;
+                                                top: 5%;
+                                                left: 5%;
+                                        }
+
+                                }
+                                .back-card-content{
+                                        margin-left: 5rem;
+                                }
+
+                        }
+                }
+                .right-div{
+                        margin: auto;
+
+                        form{
+                                .cardholder-name, .card-number{
+                                        margin-bottom: 10px;
+                                }
+                                .date-and-cvc{
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        input{
+                                                width: 4.5rem;
+                                        }
+                                        .cvc{
+                                                input{
+                                                        width: 9rem;
+                                                }
+                                        }
+                                }
+                                button{
+                                        margin-top: 30px;
+                                        padding: 10px;
+                                        background: $primary-color;
+                                        color: white;
+                                        border-radius: 10px;
+                                        width: 20rem;
+                                        cursor: pointer;
+                                }
+                        }
+                        .completed-state{
+                                text-align: center;
+                                p{
+                                        padding: 20px 0 10px 0;
+                                        color: $complete-state-color;
+                                }
+                                display: none;
+                        }
+                        .attribution{
+                                position: fixed;
+                                bottom: 0;
+                                right: 35%;
+
+                        }
+                }
+
+        }
+
+}
+
