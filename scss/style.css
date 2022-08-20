@@ -29,9 +29,9 @@ body a:hover {
 }
 body p {
   color: hsl(278deg, 68%, 11%);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 0.3rem;
-  font-size: 12px;
+  font-size: 18px;
 }
 body input {
   border-radius: 5px;
@@ -54,14 +54,21 @@ body .main-container .left-div {
   position: relative;
   height: 100%;
 }
+body .main-container .left-div .left-img {
+  z-index: 0;
+  width: 90%;
+}
 body .main-container .left-div .card-images {
   position: absolute;
   left: 80%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+body .main-container .left-div .card-images .front-card-content {
+  margin-bottom: 2rem;
+}
 body .main-container .left-div .card-images .front-card-content .card-front-img {
-  width: 25rem;
+  width: 21rem;
 }
 body .main-container .left-div .card-images .front-card-content .card-logo {
   position: absolute;
@@ -69,13 +76,19 @@ body .main-container .left-div .card-images .front-card-content .card-logo {
   left: 5%;
 }
 body .main-container .left-div .card-images .back-card-content {
-  margin-left: 5rem;
+  margin-left: 4rem;
+}
+body .main-container .left-div .card-images .back-card-content .card-back-img {
+  width: 21rem;
 }
 body .main-container .right-div {
   margin: auto;
 }
 body .main-container .right-div form .cardholder-name, body .main-container .right-div form .card-number {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+body .main-container .right-div form .cardholder-name input, body .main-container .right-div form .card-number input {
+  padding: 10px;
 }
 body .main-container .right-div form .date-and-cvc {
   display: flex;

@@ -35,9 +35,9 @@ body{
 
         p{
                 color: $primary-color;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 margin-bottom: .3rem;
-                font-size: 12px;
+                font-size: 18px;
         }
         input{
                 border-radius: 5px;
@@ -61,6 +61,11 @@ body{
                         position: relative;
                         height: 100%;
 
+                        .left-img{
+                                z-index: 0;
+                                width: 90%;
+                        }
+
                         .card-images{
                                 position: absolute;
                                 left: 80%;
@@ -69,17 +74,21 @@ body{
 
                                 .front-card-content{
                                         .card-front-img{
-                                                width: 25rem;
+                                                width: 21rem;
                                         }
                                         .card-logo{
                                                 position: absolute;
                                                 top: 5%;
                                                 left: 5%;
                                         }
+                                        margin-bottom: 2rem;
 
                                 }
                                 .back-card-content{
-                                        margin-left: 5rem;
+                                        margin-left: 4rem;
+                                        .card-back-img{
+                                                width: 21rem;
+                                        }
                                 }
 
                         }
@@ -89,7 +98,10 @@ body{
 
                         form{
                                 .cardholder-name, .card-number{
-                                        margin-bottom: 10px;
+                                        margin-bottom: 20px;
+                                        input{
+                                                padding: 10px;
+                                        }
                                 }
                                 .date-and-cvc{
                                         display: flex;
