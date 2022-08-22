@@ -75,11 +75,41 @@ body .main-container .left-div .card-images .front-card-content .card-logo {
   top: 5%;
   left: 5%;
 }
+body .main-container .left-div .card-images .front-card-content .info {
+  position: absolute;
+  top: 25%;
+}
+body .main-container .left-div .card-images .front-card-content .info .left-card-number {
+  margin-left: 1.3rem;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+body .main-container .left-div .card-images .front-card-content .info .name {
+  margin-left: 1.3rem;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+body .main-container .left-div .card-images .front-card-content .info .date {
+  position: absolute;
+  left: 95%;
+  top: 70%;
+  font-size: 12px;
+  color: white;
+}
 body .main-container .left-div .card-images .back-card-content {
   margin-left: 4rem;
 }
 body .main-container .left-div .card-images .back-card-content .card-back-img {
   width: 21rem;
+}
+body .main-container .left-div .card-images .back-card-content .card-cvc {
+  color: white;
+  position: absolute;
+  bottom: 21%;
+  left: 83%;
 }
 body .main-container .right-div {
   margin: auto;

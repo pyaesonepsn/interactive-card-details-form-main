@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/scss/style.css">
+  <link rel="stylesheet" href="/scss/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
@@ -18,10 +19,20 @@
       <div class="card-images">
         <div class="front-card-content">
           <img src="images/bg-card-front.png" alt="card-front" class="card-front-img">
-          <img src="images/card-logo.svg" alt="card-logo" class="card-logo">
+          <div class="card-logo">
+            <img src="images/card-logo.svg" alt="card-logo">
+          </div>
+          <div class="info">
+            <div class="left-card-number">0000 0000 0000 0000</div>
+            <div class="name">Jane Appleseed</div>
+            <div class="date">
+              <span class="month">00</span>/<span class="year">00</span>
+            </div>
+          </div>
         </div>
         <div class="back-card-content">
           <img src="images/bg-card-back.png" alt="card-back" class="card-back-img">
+          <div class="card-cvc">000</div>
         </div>
       </div>
       <img src="images/bg-main-desktop.png" alt="background" class="left-img">
@@ -30,24 +41,28 @@
 
 <!--    Form -->
     <div class="right-div">
-      <form action="" id="form">
+      <form action="#" id="form">
         <div class="cardholder-name">
           <p>CARDHOLDER NAME</p>
-          <input type="text" placeholder="e.g Jane Appleseed" required>
+          <input type="text" placeholder="e.g Jane Appleseed" required class="form-input" data-target="error-name" id="name">
+          <span class="form__error" id="error-name"></span>
         </div>
         <div class="card-number">
           <p>CARD NUMBER</p>
-          <input type="number" placeholder="e.g 1234 5678 9123 0000" required>
+          <input type="number" placeholder="e.g 1234 5678 9123 0000" required class="form-input" data-target="error-number" id="number">
+          <span class="form__error" id="error-number"></span>
         </div>
         <div class="date-and-cvc">
           <div class="dates">
             <p>EXP. DATE(MM/YY)</p>
-            <input type="number" placeholder="MM" required>
-            <input type="number" placeholder="YY" required>
+            <input type="text" class="form-input" placeholder="MM" required class="form-input" data-target="error-month" id="month">
+            <input type="text" class="form-input" placeholder="YY" required class="form-input" data-target="error-year" id="year">
+            <span class="form__error" id="error-dates"></span>
           </div>
           <div class="cvc">
             <p>CVC</p>
-            <input type="number" placeholder="e.g 123" required>
+            <input type="number" placeholder="e.g 123" required class=form-input data-target="error-cvc" id="cvc">
+            <span class="form__error" id="error-cvc"></span>
           </div>
         </div>
         <button class="confirmBtn">Confirm</button>
@@ -55,8 +70,8 @@
 <!--      End of Form -->
       <div class="completed-state">
         <img src="images/icon-complete.svg" alt="complete icon" class="icon-complete">
-        <h1>THANK YOU!</h1>
-        <p>We've added your card details</p>
+        <h1 class="completed-heading">THANK YOU!</h1>
+        <p class="completed-message">We've added your card details</p>
         <button class="confirmBtn">Continue</button>
       </div>
       <div class="attribution">

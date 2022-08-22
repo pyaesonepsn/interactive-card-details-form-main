@@ -82,12 +82,41 @@ body{
                                                 left: 5%;
                                         }
                                         margin-bottom: 2rem;
-
+                                        .info{
+                                                position: absolute;
+                                                top: 25%;
+                                                .left-card-number{
+                                                        margin-left: 1.3rem;
+                                                        color: white;
+                                                        letter-spacing: 3px;
+                                                        font-size: 22px;
+                                                        margin-bottom: 1rem;
+                                                }
+                                               .name{
+                                                       margin-left: 1.3rem;
+                                                       color: white;
+                                                       letter-spacing: 2px;
+                                                       font-size: 12px;
+                                               }
+                                                .date{
+                                                        position: absolute;
+                                                        left: 95%;
+                                                        top: 70%;
+                                                        font-size: 12px;
+                                                        color: white;
+                                                }
+                                        }
                                 }
                                 .back-card-content{
                                         margin-left: 4rem;
                                         .card-back-img{
                                                 width: 21rem;
+                                        }
+                                        .card-cvc{
+                                                color: white;
+                                                position: absolute;
+                                                bottom: 21%;
+                                                left: 83%;
                                         }
                                 }
 
